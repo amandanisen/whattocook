@@ -42,7 +42,7 @@ class MasterViewController: UITableViewController {
     
     @IBAction
     func addIngredients(_ sender: Any) {
-       performSegue(withIdentifier: "ingredientSegue", sender: <#T##Any?#>)
+       performSegue(withIdentifier: "ingredientSegue", sender: self)
     }
 
     // MARK: - Segues
