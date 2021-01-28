@@ -1,0 +1,42 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'whattocook' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+
+  # Marshal (for use in parsing fbconfig json)
+  pod 'Marshal', '~> 1.2.7'
+
+  # For SSL Pinning
+  pod 'TrustKit'
+
+  # For Okta authentication
+  pod 'OktaOidc'
+  pod 'OktaAuthSdk', '2.0.0'
+  pod 'SVProgressHUD'
+
+  # For SwiftyJson
+  pod 'SwiftyJSON', '~> 5.0.0'
+
+  # Realm (for use in writing data to the device)
+  # Running 3.16.1 until Xcode 11 stops being problematic
+  pod 'RealmSwift', '~> 3.20.0'
+
+  # Sync indicator view stuff
+  pod 'NVActivityIndicatorView'
+  pod 'Shift'
+
+  # Good library for programmatic constraints!!! Chris Perkins (tm)
+  pod 'ClingConstraints'
+
+  # For buttons that do stuff when you click on them
+  pod 'PrettyButtons'
+
+  # makes the keyboard not block stuff
+  pod 'IQKeyboardManagerSwift'
+
+  # Linting cos we like good code
+  # pod 'SwiftLint'
+end

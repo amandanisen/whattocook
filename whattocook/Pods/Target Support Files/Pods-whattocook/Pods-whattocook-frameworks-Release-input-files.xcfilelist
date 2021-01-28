@@ -1,0 +1,14 @@
+${PODS_ROOT}/Target Support Files/Pods-whattocook/Pods-whattocook-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ClingConstraints/ClingConstraints.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/Marshal/Marshal.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/OktaAuthSdk/OktaAuthSdk.framework
+${BUILT_PRODUCTS_DIR}/OktaOidc/OktaOidc.framework
+${BUILT_PRODUCTS_DIR}/PrettyButtons/PrettyButtons.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/Shift/Shift.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/TrustKit/TrustKit.framework

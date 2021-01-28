@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3963789E255B629800F12809 /* IngredientRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963789D255B629800F12809 /* IngredientRealm.swift */; };
 		3974BB2824CCFADC0045D4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974BB2724CCFADC0045D4D9 /* AppDelegate.swift */; };
 		3974BB2A24CCFADC0045D4D9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974BB2924CCFADC0045D4D9 /* MasterViewController.swift */; };
 		3974BB2C24CCFADC0045D4D9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974BB2B24CCFADC0045D4D9 /* DetailViewController.swift */; };
@@ -15,6 +16,9 @@
 		3974BB3424CCFADE0045D4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3974BB3224CCFADE0045D4D9 /* LaunchScreen.storyboard */; };
 		3974BB3F24CCFADF0045D4D9 /* whattocookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974BB3E24CCFADF0045D4D9 /* whattocookTests.swift */; };
 		3974BB4A24CCFADF0045D4D9 /* whattocookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974BB4924CCFADF0045D4D9 /* whattocookUITests.swift */; };
+		398ECF002552444B00232B50 /* IngredientsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398ECEFF2552444B00232B50 /* IngredientsData.swift */; };
+		39D75A3A255B6EC500B51223 /* Pods_whattocook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D75A39255B6EC500B51223 /* Pods_whattocook.framework */; };
+		39D75A80255B70AD00B51223 /* IngredientJsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D75A7F255B70AD00B51223 /* IngredientJsonDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1370FF51B6AB19377217D1BF /* Pods-whattocook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whattocook.debug.xcconfig"; path = "Target Support Files/Pods-whattocook/Pods-whattocook.debug.xcconfig"; sourceTree = "<group>"; };
+		3963789D255B629800F12809 /* IngredientRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRealm.swift; sourceTree = "<group>"; };
+		396378B3255B63AD00F12809 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		396378B5255B63C200F12809 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3974BB2424CCFADC0045D4D9 /* whattocook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whattocook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3974BB2724CCFADC0045D4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3974BB2924CCFADC0045D4D9 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,13 @@
 		3974BB4524CCFADF0045D4D9 /* whattocookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whattocookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3974BB4924CCFADF0045D4D9 /* whattocookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whattocookUITests.swift; sourceTree = "<group>"; };
 		3974BB4B24CCFADF0045D4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		398ECEFF2552444B00232B50 /* IngredientsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsData.swift; sourceTree = "<group>"; };
+		39D759DD255B651900B51223 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D75A37255B6EB900B51223 /* Pods_whattocook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_whattocook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D75A39255B6EC500B51223 /* Pods_whattocook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_whattocook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D75A7F255B70AD00B51223 /* IngredientJsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientJsonDecoder.swift; sourceTree = "<group>"; };
+		655A707F4D5B58BBCF69D8EE /* Pods-whattocook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whattocook.release.xcconfig"; path = "Target Support Files/Pods-whattocook/Pods-whattocook.release.xcconfig"; sourceTree = "<group>"; };
+		CB6FC2DD8BD7376E661A8900 /* Pods_whattocook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whattocook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D75A3A255B6EC500B51223 /* Pods_whattocook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +99,8 @@
 				3974BB3D24CCFADF0045D4D9 /* whattocookTests */,
 				3974BB4824CCFADF0045D4D9 /* whattocookUITests */,
 				3974BB2524CCFADC0045D4D9 /* Products */,
+				BB0EF65BA324930387C7469A /* Pods */,
+				EEAD508D08B9EB8BDC7B9542 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +117,7 @@
 		3974BB2624CCFADC0045D4D9 /* whattocook */ = {
 			isa = PBXGroup;
 			children = (
+				398ECEFD2552444B00232B50 /* Database */,
 				3974BB2724CCFADC0045D4D9 /* AppDelegate.swift */,
 				3974BB2924CCFADC0045D4D9 /* MasterViewController.swift */,
 				3974BB2B24CCFADC0045D4D9 /* DetailViewController.swift */,
@@ -128,6 +147,46 @@
 			path = whattocookUITests;
 			sourceTree = "<group>";
 		};
+		398ECEFD2552444B00232B50 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				398ECEFE2552444B00232B50 /* Ingredient */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		398ECEFE2552444B00232B50 /* Ingredient */ = {
+			isa = PBXGroup;
+			children = (
+				398ECEFF2552444B00232B50 /* IngredientsData.swift */,
+				3963789D255B629800F12809 /* IngredientRealm.swift */,
+				39D75A7F255B70AD00B51223 /* IngredientJsonDecoder.swift */,
+			);
+			path = Ingredient;
+			sourceTree = "<group>";
+		};
+		BB0EF65BA324930387C7469A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1370FF51B6AB19377217D1BF /* Pods-whattocook.debug.xcconfig */,
+				655A707F4D5B58BBCF69D8EE /* Pods-whattocook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEAD508D08B9EB8BDC7B9542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39D75A39255B6EC500B51223 /* Pods_whattocook.framework */,
+				39D75A37255B6EB900B51223 /* Pods_whattocook.framework */,
+				39D759DD255B651900B51223 /* Realm.framework */,
+				396378B5255B63C200F12809 /* RealmSwift.framework */,
+				396378B3255B63AD00F12809 /* Realm.framework */,
+				CB6FC2DD8BD7376E661A8900 /* Pods_whattocook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3974BB4E24CCFADF0045D4D9 /* Build configuration list for PBXNativeTarget "whattocook" */;
 			buildPhases = (
+				19718F7C42A8E00D7374E517 /* [CP] Check Pods Manifest.lock */,
 				3974BB2024CCFADC0045D4D9 /* Sources */,
 				3974BB2124CCFADC0045D4D9 /* Frameworks */,
 				3974BB2224CCFADC0045D4D9 /* Resources */,
+				53B866AF9437CE31BDB104A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +315,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19718F7C42A8E00D7374E517 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whattocook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B866AF9437CE31BDB104A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whattocook/Pods-whattocook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whattocook/Pods-whattocook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whattocook/Pods-whattocook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3974BB2024CCFADC0045D4D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3974BB2C24CCFADC0045D4D9 /* DetailViewController.swift in Sources */,
+				3963789E255B629800F12809 /* IngredientRealm.swift in Sources */,
 				3974BB2A24CCFADC0045D4D9 /* MasterViewController.swift in Sources */,
+				39D75A80255B70AD00B51223 /* IngredientJsonDecoder.swift in Sources */,
+				398ECF002552444B00232B50 /* IngredientsData.swift in Sources */,
 				3974BB2824CCFADC0045D4D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +540,7 @@
 		};
 		3974BB4F24CCFADF0045D4D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1370FF51B6AB19377217D1BF /* Pods-whattocook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +558,7 @@
 		};
 		3974BB5024CCFADF0045D4D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 655A707F4D5B58BBCF69D8EE /* Pods-whattocook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

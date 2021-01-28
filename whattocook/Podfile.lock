@@ -1,0 +1,77 @@
+PODS:
+  - ClingConstraints (1.0.2)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Marshal (1.2.7)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - OktaAuthSdk (2.0.0)
+  - OktaOidc (3.7.0):
+    - OktaOidc/AppAuth (= 3.7.0)
+    - OktaOidc/Okta (= 3.7.0)
+  - OktaOidc/AppAuth (3.7.0)
+  - OktaOidc/Okta (3.7.0):
+    - OktaOidc/AppAuth
+    - OktaOidc/Okta/Classes (= 3.7.0)
+  - OktaOidc/Okta/Classes (3.7.0):
+    - OktaOidc/AppAuth
+  - PrettyButtons (0.2.0):
+    - ClingConstraints (~> 1.0.1)
+  - Realm (3.20.0):
+    - Realm/Headers (= 3.20.0)
+  - Realm/Headers (3.20.0)
+  - RealmSwift (3.20.0):
+    - Realm (= 3.20.0)
+  - Shift (0.2.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+  - TrustKit (1.6.5)
+
+DEPENDENCIES:
+  - ClingConstraints
+  - IQKeyboardManagerSwift
+  - Marshal (~> 1.2.7)
+  - NVActivityIndicatorView
+  - OktaAuthSdk (= 2.0.0)
+  - OktaOidc
+  - PrettyButtons
+  - RealmSwift (~> 3.20.0)
+  - Shift
+  - SVProgressHUD
+  - SwiftyJSON (~> 5.0.0)
+  - TrustKit
+
+SPEC REPOS:
+  trunk:
+    - ClingConstraints
+    - IQKeyboardManagerSwift
+    - Marshal
+    - NVActivityIndicatorView
+    - OktaAuthSdk
+    - OktaOidc
+    - PrettyButtons
+    - Realm
+    - RealmSwift
+    - Shift
+    - SVProgressHUD
+    - SwiftyJSON
+    - TrustKit
+
+SPEC CHECKSUMS:
+  ClingConstraints: db6e34c17384e0f73ed9af3206020cac929ec40c
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Marshal: ef480864a6af10a63f67be7e55bb5d8fe67a16d9
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  OktaAuthSdk: 0559a6da87595fca4468237fa9645c6741a4557a
+  OktaOidc: 646773483d04de414575fd7845345fb151c0c388
+  PrettyButtons: abba8c8c60970005e3ffe0da3921533ab66cda61
+  Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
+  RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
+  Shift: 86dc634d046fc86a879dbfdb492739672cc092be
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TrustKit: 073855e3adecd317417bda4ac9e9ac54a2e3b9f2
+
+PODFILE CHECKSUM: 7f261161f753523c00619450f7d78738b333e3be
+
+COCOAPODS: 1.10.0
