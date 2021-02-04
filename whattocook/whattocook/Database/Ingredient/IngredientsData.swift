@@ -12,49 +12,68 @@ class IngredientsData {
     
     public func createJson(){
         let jsonObject: [String: Any] =
-            {
-                
-                [
-                "chicken": [
-                    "type": "meat",
-                ],
-                "steak": [
-                    "type": "meat",
-                ],
-                "broccoli": [
-                    "type": "veg",
-                ],
-                "carrots": [
-                    "type": "veg",
-                ],
-                "ketchup": [
-                    "type": "cond",
-                ],
-                "rice": [
-                    "type": "grain",
-                ],
-                "honey": [
-                    "type": "cond",
-                ],
-                "olive oil": [
-                    "type": "cond",
+            
+            [
+                "meat":
+                    [
+                        [ "name": "chicken" ],
+                        [ "name": "steak" ],
+                        [ "name": "fish" ]
+                    ],
+                "veg":      [
+                    [ "name": "spinach" ],
+                    [ "name": "carrot" ],
+                    [ "name": "corn" ]
                 ]
             ]
-            }
-
-        let valid = JSONSerialization.isValidJSONObject(jsonObject) // true
-        let decoderdec = JSONDecoder()
-        decoderdec.keyDecodingStrategy = .convertFromSnakeCase
-        let data: Data?
-        do {
-            data = try JSONSerialization.data(withJSONObject: jsonObject, options: [])
-            let contractJsonValue = try JSONDecoder().decode([IngredientJsonDecoder].self, from: data!)
-
-        } catch {
-         
-        }
-
+        //                    "chicken": [
+        //                        "type": "meat",
+        //                    ],
+        //                    "steak": [
+        //                        "type": "meat",
+        //                    ],
+        //                    "broccoli": [
+        //                        "type": "veg",
+        //                    ],
+        //                    "carrots": [
+        //                        "type": "veg",
+        //                    ],
+        //                    "ketchup": [
+        //                        "type": "cond",
+        //                    ],
+        //                    "rice": [
+        //                        "type": "grain",
+        //                    ],
+        //                    "honey": [
+        //                        "type": "cond",
+        //                    ],
+        //                    "olive oil": [
+        //                        "type": "cond",
+        //                    ]
         
-        print("Valid JSON: ", jsonObject)
+        
+        
+        let valid = JSONSerialization.isValidJSONObject(jsonObject) // true
+        if(valid){
+            //            print("Valid JSON: ", jsonObject)
+            
+            let decoderdec = JSONDecoder()
+            //            decoderdec.keyDecodingStrategy = .convertFromSnakeCase
+            let jsonData: Data?
+            do {
+                jsonData = try JSONSerialization.data(withJSONObject: jsonObject, options: [])
+                let ingredientObjectParsed = try decoderdec.decode(IngredientJsonDecoder.self, from: jsonData!)
+                //                let ingredientObjectParsed = try JSONDecoder().decode(IngredientJsonDecoder.self, from: data!)
+                print("Ingredients parsed:", ingredientObjectParsed)
+                for ingredients in ingredientObjectParsed.meat{
+                    print("Meats:", ingredients.name)
+                }
+            } catch {
+                
+            }
+            
+        }else{
+            print("JSON NOT valid.")
+        }
     }
 }

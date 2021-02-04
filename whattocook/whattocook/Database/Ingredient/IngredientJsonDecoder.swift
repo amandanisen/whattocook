@@ -8,22 +8,13 @@
 
 import Foundation
 
-public class IngredientJsonDecoder: Decodable{
-    
-    /*
-     [
-         "chicken": [
-             "type": "meat",
-         ],
-         "steak": [
-             "type": "meat",
-         ],
-         "broccoli": [
-             "type": "veg",
-         ],
-         "carrots": [
-             "type": "veg",
-         ],
-     */
-    
+
+// MARK: - IngredientJSONDecoder
+struct IngredientJsonDecoder: Codable {
+    let meat, veg: [Food]
+}
+
+// MARK: - Meat
+struct Food: Codable {
+    let name: String
 }
