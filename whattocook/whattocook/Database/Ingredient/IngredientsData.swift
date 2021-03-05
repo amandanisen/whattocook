@@ -7,10 +7,16 @@
 //
 
 import Foundation
+import RealmSwift
 
 class IngredientsData {
     
+    let realm = try? Realm()
+    
     public func createJson(){
+        //create realm
+        let ingredientRealm = IngredientRealm()
+        
         let jsonObject: [String: Any] =
             
             [
@@ -20,54 +26,36 @@ class IngredientsData {
                         [ "name": "steak" ],
                         [ "name": "fish" ]
                     ],
-                "veg":      [
-                    [ "name": "spinach" ],
-                    [ "name": "carrot" ],
-                    [ "name": "corn" ]
-                ]
+                "veg":
+                    [
+                        [ "name": "spinach" ],
+                        [ "name": "carrot" ],
+                        [ "name": "corn" ]
+                    ]
             ]
-        //                    "chicken": [
-        //                        "type": "meat",
-        //                    ],
-        //                    "steak": [
-        //                        "type": "meat",
-        //                    ],
-        //                    "broccoli": [
-        //                        "type": "veg",
-        //                    ],
-        //                    "carrots": [
-        //                        "type": "veg",
-        //                    ],
-        //                    "ketchup": [
-        //                        "type": "cond",
-        //                    ],
-        //                    "rice": [
-        //                        "type": "grain",
-        //                    ],
-        //                    "honey": [
-        //                        "type": "cond",
-        //                    ],
-        //                    "olive oil": [
-        //                        "type": "cond",
-        //                    ]
-        
-        
         
         let valid = JSONSerialization.isValidJSONObject(jsonObject) // true
         if(valid){
-            //            print("Valid JSON: ", jsonObject)
-            
             let decoderdec = JSONDecoder()
-            //            decoderdec.keyDecodingStrategy = .convertFromSnakeCase
             let jsonData: Data?
             do {
                 jsonData = try JSONSerialization.data(withJSONObject: jsonObject, options: [])
                 let ingredientObjectParsed = try decoderdec.decode(IngredientJsonDecoder.self, from: jsonData!)
-                //                let ingredientObjectParsed = try JSONDecoder().decode(IngredientJsonDecoder.self, from: data!)
-                print("Ingredients parsed:", ingredientObjectParsed)
-                for ingredients in ingredientObjectParsed.meat{
-                    print("Meats:", ingredients.name)
+                
+              
+                ingredientRealm.saveIngredientRealm(ingredientMeatList: ingredientObjectParsed.meat, ingredientVegList: ingredientObjectParsed.veg)
+                
+                let ingredientsRlm = realm?.objects(IngredientRealm.self)
+                for ingredients in ingredientsRlm!{
+                    
+                    for ingredientName in ingredients.meatList{
+                        print("ingredient name: ", ingredientName)
+                    }
+                    for ingredientType in ingredients.vegList{
+                        print("ingredient name: ", ingredientType)
+                    }
                 }
+                
             } catch {
                 
             }
